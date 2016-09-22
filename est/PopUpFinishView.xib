@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopUpFinishView" customModule="est" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="JFW-47-PuH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="290" height="322"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eys-iM-AT0">
+                    <rect key="frame" x="262" y="10" width="20" height="20"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="lR2-pQ-Cdt"/>
+                        <constraint firstAttribute="height" constant="20" id="ydC-bf-g5s"/>
+                    </constraints>
+                    <state key="normal" image="close_popup">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="tapPopUpFinishCloseButton:" destination="-1" eventType="touchUpInside" id="wUe-8b-n0D"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FoV-d1-6ic">
+                    <rect key="frame" x="70" y="292" width="150" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="1u5-6o-r1Z"/>
+                        <constraint firstAttribute="height" constant="30" id="ZRk-NK-AOL"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="tapFanPageButton:" destination="-1" eventType="touchUpInside" id="aV5-7s-1HQ"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popup_close_campaign" translatesAutoresizingMaskIntoConstraints="NO" id="Sav-37-brM">
+                    <rect key="frame" x="0.0" y="0.0" width="290" height="322"/>
+                    <animations/>
+                </imageView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Sav-37-brM" secondAttribute="trailing" id="63r-vZ-lXq"/>
+                <constraint firstItem="FoV-d1-6ic" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="70" id="7Ja-Fl-HXr"/>
+                <constraint firstAttribute="bottom" secondItem="Sav-37-brM" secondAttribute="bottom" id="DWE-L4-HWr"/>
+                <constraint firstItem="Sav-37-brM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="IsE-tC-pVa"/>
+                <constraint firstItem="Sav-37-brM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="WAu-ko-FHH"/>
+                <constraint firstItem="Sav-37-brM" firstAttribute="top" secondItem="eys-iM-AT0" secondAttribute="bottom" constant="-37" id="WXD-cG-PNB"/>
+                <constraint firstAttribute="trailing" secondItem="FoV-d1-6ic" secondAttribute="trailing" constant="70" id="c2F-Ia-bG7"/>
+                <constraint firstItem="eys-iM-AT0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="dKM-bR-XkM"/>
+                <constraint firstItem="eys-iM-AT0" firstAttribute="leading" secondItem="Sav-37-brM" secondAttribute="trailing" constant="-22" id="es6-2f-58B"/>
+                <constraint firstAttribute="bottom" secondItem="FoV-d1-6ic" secondAttribute="bottom" id="hv0-KW-GRq"/>
+                <constraint firstAttribute="trailing" secondItem="eys-iM-AT0" secondAttribute="trailing" constant="8" id="jKa-Xi-43A"/>
+                <constraint firstItem="FoV-d1-6ic" firstAttribute="top" secondItem="Sav-37-brM" secondAttribute="bottom" constant="-30" id="soW-H1-6Pr"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="WXD-cG-PNB"/>
+                    <exclude reference="es6-2f-58B"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="37" y="297"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close_popup" width="14" height="15"/>
+        <image name="popup_close_campaign" width="1030" height="1145"/>
+    </resources>
+</document>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TVCPopUpView" customModule="est" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="zwQ-5Y-cmc"/>
+                <outlet property="youtubePlayer" destination="VzR-aQ-r7y" id="AKs-6t-q18"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="290" height="230"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popup_tvc_bg" translatesAutoresizingMaskIntoConstraints="NO" id="sCD-fw-1uf">
+                    <rect key="frame" x="0.0" y="3" width="290" height="225"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="225" id="VIz-VX-NOA"/>
+                        <constraint firstAttribute="width" constant="290" id="dWP-2s-4GR"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Vr-CT-w9B">
+                    <rect key="frame" x="268" y="3" width="20" height="20"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="Uca-GY-UEp"/>
+                        <constraint firstAttribute="height" constant="20" id="pni-CS-lpv"/>
+                    </constraints>
+                    <state key="normal" image="close_popup">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="tapTVCPopUpCloseButton:" destination="-1" eventType="touchUpInside" id="oav-ZW-IM4"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VzR-aQ-r7y" customClass="YTPlayerView">
+                    <rect key="frame" x="31" y="53" width="229" height="144"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="229" id="EkG-G5-KS2"/>
+                        <constraint firstAttribute="height" constant="144" id="wmC-r3-tNu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="sCD-fw-1uf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2xW-yJ-TEH"/>
+                <constraint firstAttribute="centerX" secondItem="VzR-aQ-r7y" secondAttribute="centerX" id="3yJ-RC-YH5"/>
+                <constraint firstAttribute="bottom" secondItem="VzR-aQ-r7y" secondAttribute="bottom" constant="33" id="DET-ww-hV7"/>
+                <constraint firstItem="VzR-aQ-r7y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="53" id="Gmc-h8-0lo"/>
+                <constraint firstItem="sCD-fw-1uf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="SB4-sZ-zTV"/>
+                <constraint firstAttribute="centerY" secondItem="0Vr-CT-w9B" secondAttribute="centerY" constant="105" id="TEe-qA-sYN"/>
+                <constraint firstItem="0Vr-CT-w9B" firstAttribute="leading" secondItem="sCD-fw-1uf" secondAttribute="trailing" constant="-22" id="TQM-bb-NFT"/>
+                <constraint firstAttribute="trailing" secondItem="0Vr-CT-w9B" secondAttribute="trailing" constant="2" id="Ub4-s6-E8p"/>
+                <constraint firstAttribute="trailing" secondItem="0Vr-CT-w9B" secondAttribute="trailing" constant="2" id="WkQ-PF-URa"/>
+                <constraint firstAttribute="centerY" secondItem="VzR-aQ-r7y" secondAttribute="centerY" constant="-10" id="XsD-3H-zt5"/>
+                <constraint firstItem="0Vr-CT-w9B" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="c1h-cY-B6V"/>
+                <constraint firstItem="sCD-fw-1uf" firstAttribute="top" secondItem="0Vr-CT-w9B" secondAttribute="bottom" constant="-20" id="cba-4H-VEm"/>
+                <constraint firstAttribute="centerX" secondItem="0Vr-CT-w9B" secondAttribute="centerX" constant="-133" id="fCK-yK-uCD"/>
+                <constraint firstItem="VzR-aQ-r7y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="31" id="oMD-Fz-Afc"/>
+                <constraint firstAttribute="bottom" secondItem="sCD-fw-1uf" secondAttribute="bottom" id="oV0-w6-Yjf"/>
+                <constraint firstAttribute="trailing" secondItem="sCD-fw-1uf" secondAttribute="trailing" id="qxJ-Y7-QKn"/>
+                <constraint firstAttribute="centerY" secondItem="sCD-fw-1uf" secondAttribute="centerY" id="ryz-yp-vlt"/>
+                <constraint firstAttribute="centerX" secondItem="0Vr-CT-w9B" secondAttribute="centerX" constant="-133" id="sv8-E0-o3t"/>
+                <constraint firstAttribute="trailing" secondItem="VzR-aQ-r7y" secondAttribute="trailing" constant="30" id="tEg-so-kg7"/>
+                <constraint firstAttribute="centerX" secondItem="sCD-fw-1uf" secondAttribute="centerX" id="zhU-Cu-LQG"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="2xW-yJ-TEH"/>
+                    <exclude reference="SB4-sZ-zTV"/>
+                    <exclude reference="oV0-w6-Yjf"/>
+                    <exclude reference="qxJ-Y7-QKn"/>
+                    <exclude reference="TEe-qA-sYN"/>
+                    <exclude reference="Ub4-s6-E8p"/>
+                    <exclude reference="WkQ-PF-URa"/>
+                    <exclude reference="c1h-cY-B6V"/>
+                    <exclude reference="fCK-yK-uCD"/>
+                    <exclude reference="sv8-E0-o3t"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="-1238" y="-123"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close_popup" width="14" height="15"/>
+        <image name="popup_tvc_bg" width="1024" height="797"/>
+    </resources>
+</document>

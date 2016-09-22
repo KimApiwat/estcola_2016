@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="DB Helvethaica X Med.ttf">
+            <string>DBHelvethaicaX-Med</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EstPopUpDetailView" customModule="est" customModuleProvider="target">
+            <connections>
+                <outlet property="popup" destination="g8Z-l5-Rei" id="Nzn-gN-KYc"/>
+                <outlet property="popup_winner_phone" destination="H7o-h8-I3S" id="gVa-Mn-h15"/>
+                <outlet property="popup_winner_seat" destination="g51-Vz-z2G" id="MXh-UI-WQi"/>
+                <outlet property="shareButton" destination="dqv-dQ-f2j" id="XOJ-BZ-sXT"/>
+                <outlet property="view" destination="iN0-l3-epB" id="zSq-H0-h6D"/>
+                <outlet property="winnerLabel" destination="1cL-wh-9oW" id="N2X-NY-f3b"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="290" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popup_thankyou" translatesAutoresizingMaskIntoConstraints="NO" id="g8Z-l5-Rei">
+                    <rect key="frame" x="0.0" y="22" width="290" height="306"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="290" id="ci6-0U-lSJ"/>
+                        <constraint firstAttribute="height" constant="306" id="r2Q-BN-hgj"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="popup_winner_seat_11" translatesAutoresizingMaskIntoConstraints="NO" id="g51-Vz-z2G">
+                    <rect key="frame" x="-6" y="13" width="315" height="315"/>
+                    <animations/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="popup_winner_phone_1" translatesAutoresizingMaskIntoConstraints="NO" id="H7o-h8-I3S">
+                    <rect key="frame" x="6" y="22" width="279" height="294"/>
+                    <animations/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAt-ly-aaK">
+                    <rect key="frame" x="268" y="1" width="20" height="20"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="W6k-SN-hjM"/>
+                        <constraint firstAttribute="height" constant="20" id="n6R-4h-FsW"/>
+                    </constraints>
+                    <state key="normal" image="close_popup">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="tapCloseButton:" destination="-1" eventType="touchUpInside" id="af3-cA-b6I"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqv-dQ-f2j">
+                    <rect key="frame" x="59" y="263" width="172" height="47"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="172" id="nea-A5-FqL"/>
+                        <constraint firstAttribute="height" constant="47" id="yRu-QB-KNf"/>
+                    </constraints>
+                    <state key="normal" image="bt_share_facebook">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="tapShareButton:" destination="-1" eventType="touchUpInside" id="G1g-Y1-zXU"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 2 3 4 5 6 7 8 9 0 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1cL-wh-9oW">
+                    <rect key="frame" x="15" y="209" width="165" height="28"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="DBHelvethaicaX-Med" family="DB Helvethaica X" pointSize="24"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="dqv-dQ-f2j" secondAttribute="centerX" id="2ZL-MI-BHJ"/>
+                <constraint firstAttribute="centerX" secondItem="g8Z-l5-Rei" secondAttribute="centerX" id="Fa2-UO-VW0"/>
+                <constraint firstAttribute="trailing" secondItem="mAt-ly-aaK" secondAttribute="trailing" constant="2" id="OFj-rA-JFi"/>
+                <constraint firstAttribute="bottom" secondItem="dqv-dQ-f2j" secondAttribute="bottom" constant="10" id="sAb-dB-Ujl"/>
+                <constraint firstItem="g8Z-l5-Rei" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="22" id="tnG-He-iyg"/>
+                <constraint firstItem="mAt-ly-aaK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="1" id="wGd-wc-KFN"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-171" y="389"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bt_share_facebook" width="623" height="157"/>
+        <image name="close_popup" width="14" height="15"/>
+        <image name="popup_thankyou" width="1030" height="1085"/>
+        <image name="popup_winner_phone_1" width="955" height="1011"/>
+        <image name="popup_winner_seat_11" width="1084" height="1085"/>
+    </resources>
+</document>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="winnerSeperatorCell" id="KGk-i7-Jjw" customClass="WinnerSeperatorTableViewCell" customModule="est" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="17"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seperator" translatesAutoresizingMaskIntoConstraints="NO" id="x1L-bH-8z0">
+                        <rect key="frame" x="18" y="0.0" width="284" height="1"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="rnb-dO-GRM"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="x1L-bH-8z0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="M2g-qx-ywN"/>
+                    <constraint firstItem="x1L-bH-8z0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ZZH-HQ-ON7"/>
+                    <constraint firstAttribute="trailing" secondItem="x1L-bH-8z0" secondAttribute="trailing" constant="18" id="h0A-jC-mth"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="seperator" width="214" height="1"/>
+    </resources>
+</document>

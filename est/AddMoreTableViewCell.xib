@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="addMoreCell" id="KGk-i7-Jjw" customClass="AddMoreTableViewCell" customModule="est" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sB0-iG-4sT">
+                        <rect key="frame" x="10" y="-1" width="300" height="35"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="300" id="SWl-ag-CWQ"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="ZTP-Qp-wXS"/>
+                            <constraint firstAttribute="height" constant="35" id="d5b-iz-D8Q"/>
+                        </constraints>
+                        <state key="normal" image="btn_1code">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ZTP-Qp-wXS"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <action selector="tapAddMoreButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="gsP-9o-z0g"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="sB0-iG-4sT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="DLt-RO-vvg"/>
+                    <constraint firstItem="sB0-iG-4sT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="-1" id="Yae-5p-g8a"/>
+                    <constraint firstAttribute="centerX" secondItem="sB0-iG-4sT" secondAttribute="centerX" id="dZ9-Ri-hhk"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="DLt-RO-vvg"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="button" destination="sB0-iG-4sT" id="Kfy-mD-qLU"/>
+            </connections>
+            <point key="canvasLocation" x="179" y="277.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="btn_1code" width="198" height="25"/>
+    </resources>
+</document>

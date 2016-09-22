@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SukhumvitSet.ttc">
+            <string>SukhumvitSet-Text</string>
+            <string>SukhumvitSet-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="YGn-jM-VYe" customClass="CodeTableViewCell" customModule="est" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="557" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YGn-jM-VYe" id="wbw-uM-azB">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield_curve_r" translatesAutoresizingMaskIntoConstraints="NO" id="CSS-p3-tWW">
+                        <rect key="frame" x="531" y="2" width="22" height="40"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="66c-rg-ePr"/>
+                            <constraint firstAttribute="width" constant="22" id="LFO-gk-dLU"/>
+                            <constraint firstAttribute="height" constant="40" id="nNk-c5-bdf"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="66c-rg-ePr"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="textfield_center" translatesAutoresizingMaskIntoConstraints="NO" id="4Jg-Zq-g6X">
+                        <rect key="frame" x="26" y="2" width="505" height="40"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="505" id="AFQ-ou-f7Y"/>
+                            <constraint firstAttribute="height" constant="40" id="mJY-7r-N4o"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield_curve" translatesAutoresizingMaskIntoConstraints="NO" id="Dcc-VL-BY3">
+                        <rect key="frame" x="5" y="2" width="22" height="40"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="B5F-kc-aYJ"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="code" translatesAutoresizingMaskIntoConstraints="NO" id="2yL-N5-Czc">
+                        <rect key="frame" x="30" y="12" width="20" height="20"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="1fS-fP-dK8"/>
+                            <constraint firstAttribute="height" constant="20" id="C0j-oW-hEh"/>
+                            <constraint firstAttribute="height" constant="20" id="Jji-OM-rKc"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="ba6-2l-yoe"/>
+                            <constraint firstAttribute="width" constant="20" id="kwa-kA-GYm"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="osU-wM-Abk"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Jji-OM-rKc"/>
+                                <exclude reference="ba6-2l-yoe"/>
+                                <exclude reference="kwa-kA-GYm"/>
+                                <exclude reference="osU-wM-Abk"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="กรอกรหัส 11 ตัวเลข" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jfp-4N-UIy">
+                        <rect key="frame" x="60" y="8" width="463" height="30"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="463" id="5xa-dA-Iu9"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="ImM-Gq-uzy"/>
+                            <constraint firstAttribute="height" constant="30" id="RbT-rx-9bK"/>
+                            <constraint firstAttribute="width" constant="251" id="sIg-Ln-wbo"/>
+                        </constraints>
+                        <color key="textColor" red="0.23137254900000001" green="0.23137254900000001" blue="0.23137254900000001" alpha="1" colorSpace="deviceRGB"/>
+                        <fontDescription key="fontDescription" name="SukhumvitSet-Text" family="Sukhumvit Set" pointSize="15"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ImM-Gq-uzy"/>
+                                <exclude reference="sIg-Ln-wbo"/>
+                            </mask>
+                        </variation>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRO-zA-haA">
+                        <rect key="frame" x="30" y="13" width="20" height="20"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="NQo-jG-8pl"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="WBq-cm-EDT"/>
+                            <constraint firstAttribute="width" constant="20" id="hSZ-8S-ShI"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="mm2-iY-YA7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SukhumvitSet-Bold" family="Sukhumvit Set" pointSize="13"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="WBq-cm-EDT"/>
+                                <exclude reference="mm2-iY-YA7"/>
+                            </mask>
+                        </variation>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="4Jg-Zq-g6X" firstAttribute="leading" secondItem="Dcc-VL-BY3" secondAttribute="trailing" constant="-1" id="0ei-5n-IKw"/>
+                    <constraint firstItem="CSS-p3-tWW" firstAttribute="leading" secondItem="jfp-4N-UIy" secondAttribute="trailing" constant="8" id="10p-rx-att"/>
+                    <constraint firstItem="YRO-zA-haA" firstAttribute="leading" secondItem="Dcc-VL-BY3" secondAttribute="trailing" constant="3" id="4vB-Fi-j4A"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="2yL-N5-Czc" secondAttribute="bottom" constant="3" id="4zP-rk-Yat"/>
+                    <constraint firstItem="CSS-p3-tWW" firstAttribute="leading" secondItem="4Jg-Zq-g6X" secondAttribute="trailing" id="8I0-yx-xYV"/>
+                    <constraint firstAttribute="centerX" secondItem="4Jg-Zq-g6X" secondAttribute="centerX" id="FcG-zd-g8y"/>
+                    <constraint firstAttribute="bottom" secondItem="Dcc-VL-BY3" secondAttribute="bottom" constant="1" id="GTj-Cu-0SV"/>
+                    <constraint firstAttribute="bottom" secondItem="4Jg-Zq-g6X" secondAttribute="bottom" constant="1" id="HnF-bq-go1"/>
+                    <constraint firstItem="jfp-4N-UIy" firstAttribute="top" secondItem="wbw-uM-azB" secondAttribute="top" constant="8" id="Nph-26-k3s"/>
+                    <constraint firstItem="jfp-4N-UIy" firstAttribute="leading" secondItem="2yL-N5-Czc" secondAttribute="trailing" constant="10" id="Ofn-9c-FDf"/>
+                    <constraint firstItem="4Jg-Zq-g6X" firstAttribute="top" secondItem="wbw-uM-azB" secondAttribute="top" constant="2" id="UNQ-EO-4rN"/>
+                    <constraint firstAttribute="bottom" secondItem="YRO-zA-haA" secondAttribute="bottom" constant="12" id="UkU-Kx-RFe"/>
+                    <constraint firstItem="CSS-p3-tWW" firstAttribute="top" secondItem="wbw-uM-azB" secondAttribute="top" constant="2" id="Utx-nF-5c4"/>
+                    <constraint firstItem="YRO-zA-haA" firstAttribute="top" secondItem="wbw-uM-azB" secondAttribute="top" constant="11" id="V9j-wT-fnS"/>
+                    <constraint firstAttribute="bottom" secondItem="CSS-p3-tWW" secondAttribute="bottom" constant="1" id="YQm-0w-OOn"/>
+                    <constraint firstItem="YRO-zA-haA" firstAttribute="leading" secondItem="Dcc-VL-BY3" secondAttribute="trailing" constant="55" id="cYy-yf-eHs"/>
+                    <constraint firstItem="jfp-4N-UIy" firstAttribute="leading" secondItem="YRO-zA-haA" secondAttribute="trailing" constant="17" id="e1X-WR-DXx"/>
+                    <constraint firstAttribute="bottom" secondItem="jfp-4N-UIy" secondAttribute="bottom" constant="5" id="eaj-3t-Q87"/>
+                    <constraint firstItem="YRO-zA-haA" firstAttribute="leading" secondItem="Dcc-VL-BY3" secondAttribute="trailing" constant="55" id="iQP-hZ-sje"/>
+                    <constraint firstItem="2yL-N5-Czc" firstAttribute="leading" secondItem="Dcc-VL-BY3" secondAttribute="trailing" constant="8" id="lkf-o9-dCS"/>
+                    <constraint firstItem="2yL-N5-Czc" firstAttribute="leading" secondItem="Dcc-VL-BY3" secondAttribute="trailing" constant="3" id="n8J-AN-BFE"/>
+                    <constraint firstItem="Dcc-VL-BY3" firstAttribute="top" secondItem="wbw-uM-azB" secondAttribute="top" constant="2" id="ssm-ri-FMV"/>
+                    <constraint firstItem="jfp-4N-UIy" firstAttribute="leading" secondItem="2yL-N5-Czc" secondAttribute="trailing" constant="10" id="uc8-C0-NVQ"/>
+                    <constraint firstItem="YRO-zA-haA" firstAttribute="top" secondItem="wbw-uM-azB" secondAttribute="top" constant="13" id="ycQ-gH-0yz"/>
+                    <constraint firstItem="2yL-N5-Czc" firstAttribute="top" secondItem="wbw-uM-azB" secondAttribute="topMargin" constant="4" id="zOy-Vw-zam"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="lkf-o9-dCS"/>
+                        <exclude reference="UkU-Kx-RFe"/>
+                        <exclude reference="V9j-wT-fnS"/>
+                        <exclude reference="cYy-yf-eHs"/>
+                        <exclude reference="iQP-hZ-sje"/>
+                        <exclude reference="Ofn-9c-FDf"/>
+                        <exclude reference="e1X-WR-DXx"/>
+                        <exclude reference="uc8-C0-NVQ"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="codeIcon" destination="2yL-N5-Czc" id="yU9-sK-din"/>
+                <outlet property="codeNumber" destination="YRO-zA-haA" id="jl9-mg-viT"/>
+                <outlet property="codeTextField" destination="jfp-4N-UIy" id="UWf-ff-SVG"/>
+                <outlet property="imageview_center" destination="4Jg-Zq-g6X" id="vZk-SC-J3m"/>
+                <outlet property="imageview_curve" destination="Dcc-VL-BY3" id="wQc-dZ-UnM"/>
+                <outlet property="imageview_curve_r" destination="CSS-p3-tWW" id="3iC-lB-FmU"/>
+            </connections>
+            <point key="canvasLocation" x="243.5" y="88"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="code" width="41" height="40"/>
+        <image name="textfield_center" width="258" height="40"/>
+        <image name="textfield_curve" width="22" height="40"/>
+        <image name="textfield_curve_r" width="21" height="40"/>
+    </resources>
+</document>

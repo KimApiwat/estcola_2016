@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="homeCell" rowHeight="133" id="KGk-i7-Jjw" customClass="HomeTableViewCell" customModule="est" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="409" height="133"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTr-db-1fu">
+                        <rect key="frame" x="117" y="70" width="175" height="54"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="175" id="0tZ-Je-D7f"/>
+                            <constraint firstAttribute="width" constant="134" id="MVW-4h-zva"/>
+                            <constraint firstAttribute="height" constant="54" id="Ncn-nw-AHI"/>
+                            <constraint firstAttribute="height" constant="43" id="iRt-B4-GWJ"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="bt_sendcode_red_1" backgroundImage="bt_sendcode_red_1">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="MVW-4h-zva"/>
+                                <exclude reference="iRt-B4-GWJ"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <action selector="tapSendCodeButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="qWw-9Q-DWr"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstAttribute="centerX" secondItem="RTr-db-1fu" secondAttribute="centerX" id="DEn-Na-tSk"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="RTr-db-1fu" secondAttribute="bottom" id="TuW-9n-E4k"/>
+                    <constraint firstAttribute="centerX" secondItem="RTr-db-1fu" secondAttribute="centerX" constant="0.5" id="W1g-6G-hIE"/>
+                    <constraint firstAttribute="centerY" secondItem="RTr-db-1fu" secondAttribute="centerY" constant="-18.5" id="c0P-6s-f0Z"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="W1g-6G-hIE"/>
+                        <exclude reference="c0P-6s-f0Z"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="button_sendcode" destination="RTr-db-1fu" id="cFt-Ke-0NF"/>
+            </connections>
+            <point key="canvasLocation" x="218.5" y="58.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bt_sendcode_red_1" width="572" height="174"/>
+    </resources>
+</document>

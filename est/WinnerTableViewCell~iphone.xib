@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="DB Helvethaica X Med.ttf">
+            <string>DBHelvethaicaX-Med</string>
+            <string>DBHelvethaicaX-Med</string>
+            <string>DBHelvethaicaX-Med</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="winnerCell" id="KGk-i7-Jjw" customClass="WinnerTableViewCell" customModule="est" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alert_black" translatesAutoresizingMaskIntoConstraints="NO" id="Gc5-1g-6PT">
+                        <rect key="frame" x="8" y="3" width="68" height="60"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="78u-Pc-e5D"/>
+                            <constraint firstAttribute="width" constant="68" id="wmq-Ep-4Ew"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ประกาศครั้งที่ 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyK-lT-ejp">
+                        <rect key="frame" x="84" y="-2" width="163" height="50"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="163" id="LAs-AV-eYb"/>
+                            <constraint firstAttribute="height" constant="50" id="xdA-J8-Ogm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DBHelvethaicaX-Med" family="DB Helvethaica X" pointSize="26"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <color key="shadowColor" red="0.1176470588" green="0.30196078430000001" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <size key="shadowOffset" width="1" height="1"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="18 กันยายน 2558" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hnr-5x-3tM">
+                        <rect key="frame" x="84" y="31" width="101" height="30"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="tx1-cT-NWv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DBHelvethaicaX-Med" family="DB Helvethaica X" pointSize="20"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <color key="shadowColor" red="0.1176470588" green="0.30196078430000001" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <size key="shadowOffset" width="1" height="1"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="  จำนวน 5 คัน" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nnw-eX-Rvp">
+                        <rect key="frame" x="187" y="31" width="115" height="30"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="ad2-1j-JH3"/>
+                            <constraint firstAttribute="width" constant="115" id="m1J-oQ-vlQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DBHelvethaicaX-Med" family="DB Helvethaica X" pointSize="22"/>
+                        <color key="textColor" red="0.16470588235294117" green="0.72941176470588232" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <color key="shadowColor" red="0.11764705882352941" green="0.30196078431372547" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
+                        <size key="shadowOffset" width="1" height="1"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="Hnr-5x-3tM" secondAttribute="bottom" constant="6" id="0EN-tW-sNt"/>
+                    <constraint firstItem="Hnr-5x-3tM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="31" id="1Hf-0Y-Mdr"/>
+                    <constraint firstItem="Gc5-1g-6PT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="1sn-Ys-5A8"/>
+                    <constraint firstItem="Nnw-eX-Rvp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="41" id="4zB-j5-Wwv"/>
+                    <constraint firstItem="Nnw-eX-Rvp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="31" id="6Ej-qu-M6G"/>
+                    <constraint firstItem="dyK-lT-ejp" firstAttribute="leading" secondItem="Gc5-1g-6PT" secondAttribute="trailing" constant="8" id="9cl-7J-lYo"/>
+                    <constraint firstAttribute="bottom" secondItem="Gc5-1g-6PT" secondAttribute="bottom" constant="11" id="B4T-lD-hbL"/>
+                    <constraint firstItem="Hnr-5x-3tM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="41" id="IKq-LL-qjr"/>
+                    <constraint firstItem="dyK-lT-ejp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="Ovq-8Y-TDq"/>
+                    <constraint firstItem="Gc5-1g-6PT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="RLK-Rx-ahz"/>
+                    <constraint firstItem="Hnr-5x-3tM" firstAttribute="leading" secondItem="Gc5-1g-6PT" secondAttribute="trailing" constant="8" id="TZB-sd-9Ic"/>
+                    <constraint firstItem="Nnw-eX-Rvp" firstAttribute="leading" secondItem="Hnr-5x-3tM" secondAttribute="trailing" constant="2" id="Xua-iJ-SgU"/>
+                    <constraint firstAttribute="bottom" secondItem="dyK-lT-ejp" secondAttribute="bottom" constant="26" id="YDe-E8-Gcg"/>
+                    <constraint firstItem="Nnw-eX-Rvp" firstAttribute="leading" secondItem="Hnr-5x-3tM" secondAttribute="trailing" id="aiw-2y-YNa"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="B4T-lD-hbL"/>
+                        <exclude reference="YDe-E8-Gcg"/>
+                        <exclude reference="0EN-tW-sNt"/>
+                        <exclude reference="IKq-LL-qjr"/>
+                        <exclude reference="4zB-j5-Wwv"/>
+                        <exclude reference="aiw-2y-YNa"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="announceImageView" destination="Gc5-1g-6PT" id="Bnx-KL-vMZ"/>
+                <outlet property="announceLabel" destination="dyK-lT-ejp" id="Vvb-UQ-KgS"/>
+                <outlet property="dateLabel" destination="Hnr-5x-3tM" id="Oh9-Oz-L8l"/>
+                <outlet property="prizeLabel" destination="Nnw-eX-Rvp" id="ufL-EX-wpe"/>
+            </connections>
+            <point key="canvasLocation" x="396" y="387.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="alert_black" width="118" height="106"/>
+    </resources>
+</document>
